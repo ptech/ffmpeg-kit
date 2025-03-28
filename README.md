@@ -1,6 +1,9 @@
 # FFmpegKit ![GitHub release](https://img.shields.io/badge/release-v6.0-blue.svg) ![Maven Central](https://img.shields.io/maven-central/v/com.arthenica/ffmpeg-kit-min) ![CocoaPods](https://img.shields.io/cocoapods/v/ffmpeg-kit-ios-min) ![pub](https://img.shields.io/pub/v/ffmpeg_kit_flutter.svg) ![npm](https://img.shields.io/npm/v/ffmpeg-kit-react-native.svg)
 
+[Setup Local Depedencies]()
+
 ## Notice
+
 FFmpegKit has been officially retired. There will be no further `ffmpeg-kit` releases.
 
 See [Saying Goodbye to FFmpegKit @ medium](https://medium.com/@tanersener/saying-goodbye-to-ffmpegkit-33ae939767e1) to learn why we made this decision.
@@ -23,6 +26,7 @@ It includes scripts to build `FFmpeg` native libraries, a wrapper library to run
  [Maven Central](https://search.maven.org), [CocoaPods](https://cocoapods.org), [pub](https://pub.dev) and [npm](https://www.npmjs.com).
 
 ### 1. Features
+
 - Scripts to build FFmpeg native libraries
 - `FFmpegKit` wrapper library to run `FFmpeg`/`FFprobe` commands in applications
 - Supports native platforms: Android, iOS, Linux, macOS and tvOS
@@ -60,8 +64,8 @@ All scripts support additional options to enable optional libraries and disable 
 
 ### 8. FFmpegKit Library
 
-`FFmpegKit` is a wrapper library that allows you to easily run `FFmpeg`/`FFprobe` commands in applications. It 
-provides additional features on top of `FFmpeg` to enable platform specific resources, control how commands are 
+`FFmpegKit` is a wrapper library that allows you to easily run `FFmpeg`/`FFprobe` commands in applications. It
+provides additional features on top of `FFmpeg` to enable platform specific resources, control how commands are
 executed and how the results are handled.
 
 `Android` library of `FFmpegKit` has a `Java` API, `Apple` libraries (`iOS`, `macOS`, `tvOS`) have an `Objective-C`
@@ -70,13 +74,13 @@ a `JavaScript` API with `Typescript` definitions, which are identical in terms o
 
 ### 9. Packages
 
-There are eight different `ffmpeg-kit` packages distributed on 
-[Github](https://github.com/arthenica/ffmpeg-kit/releases), 
+There are eight different `ffmpeg-kit` packages distributed on
+[Github](https://github.com/arthenica/ffmpeg-kit/releases),
 [Maven Central](https://search.maven.org), [CocoaPods](https://cocoapods.org), [pub](https://pub.dev) and
  [npm](https://www.npmjs.com).
 Below you can see which system libraries and external libraries are enabled in each one of them.
 
-Please remember that some parts of `FFmpeg` are licensed under the `GPL` and only `GPL` licensed `ffmpeg-kit` packages 
+Please remember that some parts of `FFmpeg` are licensed under the `GPL` and only `GPL` licensed `ffmpeg-kit` packages
 include them.
 
 <table>
@@ -125,15 +129,15 @@ include them.
 </tbody>
 </table>
 
- - `AVFoundation` is not available on `tvOS`
- - `VideoToolbox` is not available on LTS releases of `iOS` and `tvOS`
- - `zimg` is supported since `v4.5.1`
+- `AVFoundation` is not available on `tvOS`
+- `VideoToolbox` is not available on LTS releases of `iOS` and `tvOS`
+- `zimg` is supported since `v4.5.1`
 
 ### 10. Versions
 
 `FFmpegKit` binaries generated use the same major and minor version numbers as the upstream `FFmpeg` project. The
 third and last number in the version string, if exists, is specific to `FFmpegKit`. It shows different releases from
-the same `FFmpeg` release branch. 
+the same `FFmpeg` release branch.
 
 `dev` part in the version string indicates that `FFmpeg` source code is cloned from the `FFmpeg` `master` branch and
 the exact version number of `FFmpeg` is obtained using the `git describe --tags` command.
@@ -163,7 +167,7 @@ the exact version number of `FFmpeg` is obtained using the `git describe --tags`
 
 ### 11. LTS Releases
 
-`FFmpegKit` binaries are published in two release variants: `Main Release` and `LTS Release`. 
+`FFmpegKit` binaries are published in two release variants: `Main Release` and `LTS Release`.
 
 - Main releases include complete functionality of the library and support the latest SDK/API features.
 
@@ -173,7 +177,7 @@ This table shows the differences between two variants.
 
 |        | Main Release |                        LTS Release                        |
 | :----: | :----: |:---------------------------------------------------------:|
-| Android API Level | 24 |                            16                             | 
+| Android API Level | 24 |                            16                             |
 | Android Camera Access | Yes |                             -                             |
 | Android Architectures | arm-v7a-neon<br/>arm64-v8a<br/>x86<br/>x86-64 | arm-v7a<br/>arm-v7a-neon<br/>arm64-v8a<br/>x86<br/>x86-64 |
 | iOS Min SDK | 12.1 |                            10                             |
@@ -197,7 +201,7 @@ A more detailed documentation is available under [Wiki](https://github.com/arthe
 
 ### 13. Test Applications
 
-You can see how `FFmpegKit` is used inside an application by running test applications created under 
+You can see how `FFmpegKit` is used inside an application by running test applications created under
 [FFmpegKit Test](https://github.com/arthenica/ffmpeg-kit-test) project.
 
 All applications are identical and supports command execution, video encoding, accessing https urls, encoding audio,
